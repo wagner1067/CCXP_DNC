@@ -1,17 +1,19 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CCPX 2023</title>
     <link rel="stylesheet" href="style.css" />
+    <title>CCPX DNC PROJETO</title>
   </head>
   <body>
-    <header id="principal">
-      <img src="ccpx22.svg" alt="logo-ccpx" />
+    <header class="header">
+      <a href="http://" target="_blank" rel="noopener noreferrer">
+        <img src="ccpx22.svg" alt="logo CCPX" width="130px" />
+      </a>
     </header>
-    <main id="main">
-      <header id="informação">
+    <main class="main">
+      <article id="informations">
         <h1>REVIVA O ÉPICO</h1>
         <h3>DE 01 A 04 DE DEZEMBRO</h3>
         <p>
@@ -26,35 +28,82 @@
           aventuras épicas a cada passo pelos<br />
           nossos corredores.
         </p>
-      </header>
+      </article>
+      <article id="coutdown_section">
+        <div class="timer">
+          <div class="relogio">
+            <h1 id="dia"></h1>
+          </div>
+          <div class="relogio">
+            <h1 id="hora"></h1>
+          </div>
+          <div class="relogio">
+            <h1 id="minuto"></h1>
+          </div>
+          <div class="relogio">
+            <h1 id="segundo"></h1>
+          </div>
+        </div>
+        <div id="coutdown_text">
+            <h1>PARA A MAIOR CCXP DE TODOS OS TEMPOS</h1>
+        </div>
+        <div>
+            <video controls="true"  autoplay loop muted ><source src="Arlequina.mp4" type="video/mp4" ></video>
+        </div>
+      </article>
     </main>
-    <div class="timer">
-      <div>
-        <h1 id="dias">00D</h1>
-      </div>
-
-      <div>
-        <h1 id="horas">00H</h1>
-      </div>
-
-      <div>
-        <h1 id="minutos">00M</h1>
-      </div>
-
-      <div>
-        <h1 id="segundos">00S</h1>
-      </div>
-
-      <h2 id="tempos">PARA A MAIOR CCXP DE TODOS OS TEMPOS</h2>
+    <footer>
+        <div id="mostruario">
+            <h2>AINDA DÁ TEMPO DE GARANTIR O SEU, MAS CORRE!</h2>
+            <img 
+            src="quinta.svg" 
+            onclick="selectCard('quinta')"
+            onmouseover="addBorder('#quinta')" 
+            onmouseout="addBorder('#quinta')" 
+            alt="livro da quinta" 
+            id="quinta" 
+            class="cards-ingressos" 
+            width="180px"
+            >
+            <img src="sexta.svg" 
+            onclick="selectCard('sexta')"
+            onmouseover="addBorder('#sexta')" 
+            onmouseout="addBorder('#sexta')" 
+            alt="livro da sexta" 
+            id="sexta" 
+            class="cards-ingressos" 
+            width="180px"
+            >
+            <img src="sabado.svg" 
+            onclick="selectCard('sabado')"
+            onmouseover="addBorder('#sabado')" 
+            onmouseout="addBorder('#sabado')"  
+            alt="livro do sabado" 
+            id="sabado" 
+            class="cards-ingressos" 
+            width="180px"
+            >
+            <img src="domingo.svg" 
+            onclick="selectCard('domingo')"
+            onmouseover="addBorder('#domingo')" 
+            onmouseout="addBorder('#domingo')" 
+            alt="livro do domingo" 
+            id="domingo" 
+            class="cards-ingressos" 
+            width="180px"
+            >
+        </div>
+        <div id="buttom_div">
+            <button id="cliqueAqui" onclick="showSelectedCards()"><b>GARANTA O SEU!</b></button>
+        </div>
+    </footer>
+    <div id="formSection">
+      <form action="https://www.google.com.br/" target="_blank">
+        <input id="digite__email" type="email" placeholder="Digite seu email" required>
+        <input type="submit" id="enviar__email" value="Enviar">
+      </form>
     </div>
-
-    <div>
-      <h3 id="garantir">AINDA DÁ TEMPO DE GARANTIR O SEU, MAS CORRE!</h3>
-      <img src="quinta.svg" alt="logo-quinta" />
-      <img src="sexta.svg" alt="logo-sexta" />
-      <img src="sabado.svg" alt="logo-sabado" />
-      <img src="domingo.svg" alt="logo-domingo" />
-      <h1 id="garanta">GARANTA O SEU!</h1>
-    </div>
+      <script src="countDown.js"></script>
+      <script src="main.js"></script>
   </body>
 </html>
