@@ -1,0 +1,81 @@
+/*configurações iniciais*/
+:root {
+  font-size: 18px;
+  --roxo: #514988;
+  --amarelo: #f3c61f;
+}
+
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/*cabeça do document*/
+
+header {
+  background-color: #ffd900;
+  width: auto;
+  height: 118px;
+}
+
+#main {
+  display: grid;
+  grid-template-columns: 0.4fr 0.6fr;
+  width: 100vw;
+  top: 400px;
+}
+
+img {
+  width: 202px;
+  height: 63px;
+  margin-top: 27px;
+  margin-left: 58px;
+}
+
+#informação {
+  background: #514988;
+  width: 802px;
+  height: 694px;
+  top: 118px;
+}
+
+header h1 {
+  width: 676px;
+  height: 149px;
+  top: 149px;
+  left: 58px;
+  font-weight: 700px;
+  font-size: 70px;
+  line-height: 85.07px;
+  text-align: center;
+  color: #f3c61f;
+}
+header h3 {
+  width: 676px;
+  height: 149px;
+  top: 149px;
+  left: 58px;
+  font-weight: 700px;
+  font-size: 30px;
+  line-height: 36.46px;
+  text-align: center;
+  color: #ffffff;
+}
+
+header p {
+  width: 678px;
+  height: 350px;
+  top: 370px;
+  left: 64px;
+  font-weight: 400px;
+  font-size: 29px;
+  line-height: 35.24px;
+  text-align: center;
+  color: #ffffff;
+}
