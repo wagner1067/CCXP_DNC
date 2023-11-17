@@ -45,65 +45,77 @@
           </div>
         </div>
         <div id="coutdown_text">
-            <h1>PARA A MAIOR CCXP DE TODOS OS TEMPOS</h1>
+          <h1>PARA A MAIOR CCXP DE TODOS OS TEMPOS</h1>
         </div>
         <div>
-            <video controls="true"  autoplay loop muted ><source src="Arlequina.mp4" type="video/mp4" ></video>
+          <video controls="true" autoplay loop muted>
+            <source src="Arlequina.mp4" type="video/mp4" />
+          </video>
         </div>
       </article>
     </main>
     <footer>
-        <div id="mostruario">
-            <h2>AINDA DÁ TEMPO DE GARANTIR O SEU, MAS CORRE!</h2>
-            <img 
-            src="quinta.svg" 
-            onclick="selectCard('quinta')"
-            onmouseover="addBorder('#quinta')" 
-            onmouseout="addBorder('#quinta')" 
-            alt="livro da quinta" 
-            id="quinta" 
-            class="cards-ingressos" 
-            width="180px"
-            >
-            <img src="sexta.svg" 
-            onclick="selectCard('sexta')"
-            onmouseover="addBorder('#sexta')" 
-            onmouseout="addBorder('#sexta')" 
-            alt="livro da sexta" 
-            id="sexta" 
-            class="cards-ingressos" 
-            width="180px"
-            >
-            <img src="sabado.svg" 
-            onclick="selectCard('sabado')"
-            onmouseover="addBorder('#sabado')" 
-            onmouseout="addBorder('#sabado')"  
-            alt="livro do sabado" 
-            id="sabado" 
-            class="cards-ingressos" 
-            width="180px"
-            >
-            <img src="domingo.svg" 
-            onclick="selectCard('domingo')"
-            onmouseover="addBorder('#domingo')" 
-            onmouseout="addBorder('#domingo')" 
-            alt="livro do domingo" 
-            id="domingo" 
-            class="cards-ingressos" 
-            width="180px"
-            >
-        </div>
-        <div id="buttom_div">
-            <button id="cliqueAqui" onclick="showSelectedCards()"><b>GARANTA O SEU!</b></button>
-        </div>
+      <div id="mostruario">
+        <h2>AINDA DÁ TEMPO DE GARANTIR O SEU, MAS CORRE!</h2>
+        <img
+          src="quinta.svg"
+          onclick="selectCard('quinta')"
+          onmouseover="addBorder('#quinta')"
+          onmouseout="addBorder('#quinta')"
+          alt="livro da quinta"
+          id="quinta"
+          class="cards-ingressos"
+          width="180px"
+        />
+        <img
+          src="sexta.svg"
+          onclick="selectCard('sexta')"
+          onmouseover="addBorder('#sexta')"
+          onmouseout="addBorder('#sexta')"
+          alt="livro da sexta"
+          id="sexta"
+          class="cards-ingressos"
+          width="180px"
+        />
+        <img
+          src="sabado.svg"
+          onclick="selectCard('sabado')"
+          onmouseover="addBorder('#sabado')"
+          onmouseout="addBorder('#sabado')"
+          alt="livro do sabado"
+          id="sabado"
+          class="cards-ingressos"
+          width="180px"
+        />
+        <img
+          src="domingo.svg"
+          onclick="selectCard('domingo')"
+          onmouseover="addBorder('#domingo')"
+          onmouseout="addBorder('#domingo')"
+          alt="livro do domingo"
+          id="domingo"
+          class="cards-ingressos"
+          width="180px"
+        />
+      </div>
+      <div id="buttom_div">
+        <button id="cliqueAqui" onclick="showSelectedCards()">
+          <b>GARANTA O SEU!</b>
+        </button>
+      </div>
     </footer>
     <div id="formSection">
       <form action="https://www.google.com.br/" target="_blank">
-        <input id="digite__email" type="email" placeholder="Digite seu email" required>
-        <input type="submit" id="enviar__email" value="Enviar">
+        <input
+          id="digite__email"
+          type="email"
+          placeholder="Digite seu email"
+          required
+        />
+        <input type="submit" id="enviar__email" value="Enviar" />
       </form>
     </div>
-      <script src="countDown.js"></script>
-      <script src="main.js"></script>
+    <script src="countDown.js"></script>
+    <script src="main.js"></script>
   </body>
 </html>

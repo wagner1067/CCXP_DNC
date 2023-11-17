@@ -1,23 +1,23 @@
 //Definindo o array ingressos que começa vazio
-const ingressos = []; 
-function addBorder(element){ 
-  var card = document.querySelector(element);
-  card.classList.toggle("cardChanges");
+const ingressos = [];
+function addBorder(element) {
+    var card = document.querySelector(element);
+    card.classList.toggle("cardChanges");
 }
-function selectCard(id){
-    var element = document.getElementById(id); 
+function selectCard(id) {
+    var element = document.getElementById(id);
     element.classList.toggle("card-selected");
-    if(ingressos.includes(id)){
-        ingressos.splice(ingressos.indexOf(id), 1); 
+    if (ingressos.includes(id)) {
+        ingressos.splice(ingressos.indexOf(id), 1);
         //o ingressos.infexOf(selector) retorna a posição do card selecionada dentro da minha string
-    }else{
+    } else {
         ingressos.push(id);
     }
 }
- showSelectedCards = () => {
-    if(ingressos.length > 0){
-        alert("Os ingressos selecionados foram:"+" "+ingressos);
-    }else{
+showSelectedCards = () => {
+    if (ingressos.length > 0) {
+        alert("Os ingressos selecionados foram:" + " " + ingressos);
+    } else {
         alert("Por favor, selecione algum dos ingressos!")
     }
 }
@@ -34,8 +34,8 @@ function checkKeyboardCode(){
 }
 */
 //checkKeyboardCode();
-function addKeyboardEventListeners(){
-    document.addEventListener('keydown', (event)=>{
+function addKeyboardEventListeners() {
+    document.addEventListener('keydown', (event) => {
 
         var quinta = document.getElementById('quinta');
         var sexta = document.getElementById('sexta');
@@ -43,28 +43,28 @@ function addKeyboardEventListeners(){
         var domingo = document.getElementById('domingo');
 
         var code = event.code;
-        if(code == 'Digit1'){
+        if (code == 'Digit1') {
             quinta.classList.toggle('cardChanges');
             sexta.classList.remove('cardChanges');
             sabado.classList.remove('cardChanges');
             domingo.classList.remove('cardChanges');
         }
 
-        if(code == 'Digit2'){
+        if (code == 'Digit2') {
             quinta.classList.remove('cardChanges');
             sexta.classList.toggle('cardChanges');
             sabado.classList.remove('cardChanges');
             domingo.classList.remove('cardChanges');
         }
 
-        if(code == 'Digit3'){
+        if (code == 'Digit3') {
             quinta.classList.remove('cardChanges');
             sexta.classList.remove('cardChanges');
             sabado.classList.toggle('cardChanges');
             domingo.classList.remove('cardChanges');
         }
 
-        if(code == 'Digit4'){
+        if (code == 'Digit4') {
             quinta.classList.remove('cardChanges');
             sexta.classList.remove('cardChanges');
             sabado.classList.remove('cardChanges');

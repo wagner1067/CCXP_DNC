@@ -1,25 +1,30 @@
 /*configurações iniciais*/
-:root{
+:root {
   font-size: 18px;
   --roxo: #514988;
-  --amarelo: #F3C61F;
+  --amarelo: #f3c61f;
 }
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-body{
+body {
   overflow-x: hidden; /*Necessário para retirar a barra de rolagem na parte inferior*/
 }
 /*cabeça do document*/
-.header{
-  background-image: linear-gradient(to right, var(--amarelo), #f7cb2f 80%, #f7cb2f);
+.header {
+  background-image: linear-gradient(
+    to right,
+    var(--amarelo),
+    #f7cb2f 80%,
+    #f7cb2f
+  );
   padding: 20px 40px;
 }
 /*Informações principais da página*/
-.main{
+.main {
   display: grid;
   grid-template-columns: 0.4fr 0.6fr;
   width: 100vw;
@@ -33,12 +38,12 @@ body{
   line-height: 1.25;
   font-size: 1.2rem;
 }
-#informations h1{
-  color: #F3C61F;
+#informations h1 {
+  color: #f3c61f;
   font-size: 3rem;
   margin-bottom: 20px;
 }
-#informations h3{
+#informations h3 {
   margin-bottom: 40px;
 }
 #coutdown_section {
@@ -46,19 +51,19 @@ body{
   padding: 10px 0px;
 }
 #coutdown_text {
-  color: #E33881;
+  color: #e33881;
   margin-bottom: 20px;
 }
-.timer{
+.timer {
   display: flex;
   justify-content: center;
 }
-.relogio{
+.relogio {
   margin: 20px 40px;
   font-size: 1.3rem;
   color: #514988;
 }
-video{
+video {
   width: 90%;
   border-radius: 20px;
 }
@@ -69,33 +74,33 @@ footer {
   margin-bottom: 55px;
 }
 footer h2 {
-  color: #F3C61F;
+  color: #f3c61f;
   margin-top: 15px;
   margin-left: 40px;
   margin-bottom: 20px;
 }
-#mostruario img{
+#mostruario img {
   padding: 10px;
   cursor: pointer;
   border-radius: 10px;
   transition: transform 0.3s ease-in-out;
 }
 /*Mudanças nos cards quando selecionados*/
-  .cardChanges {
-      border: 1px solid gray;
-      transform: scale(1.1);
-      box-shadow: 10px 10px 10px gray;
-  }
-  .card-selected{
-      border: 20px solid greenyellow;
-  }
+.cardChanges {
+  border: 1px solid gray;
+  transform: scale(1.1);
+  box-shadow: 10px 10px 10px gray;
+}
+.card-selected {
+  border: 20px solid greenyellow;
+}
 /*        FIM DAS MUDANÇAS NOS CARDS      */
 
-#buttom_div{
-display: flex;
-justify-content: center; /* Centraliza horizontalmente */
-align-items: center; /* Centraliza verticalmente */
-margin-top: 20px
+#buttom_div {
+  display: flex;
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+  margin-top: 20px;
 }
 #cliqueAqui {
   background-color: #514988;
@@ -107,11 +112,11 @@ margin-top: 20px
   border: none;
   cursor: pointer;
 }
-#cliqueAqui:hover{
+#cliqueAqui:hover {
   background-color: #312b52;
   scale: 1.1;
 }
-#formSection{
+#formSection {
   background-image: linear-gradient(var(--roxo), #090329);
   display: flex;
   justify-content: center;
@@ -119,75 +124,75 @@ margin-top: 20px
   padding-bottom: 50px;
   width: 100vw;
 }
-form{
+form {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;    
+  width: 100%;
 }
-form input{
+form input {
   background-color: #665e9c;
   border-radius: 10px;
-  color: #FFFFFF;
+  color: #ffffff;
   border: 0;
   margin-top: 20px;
   margin-bottom: 10px;
   font-size: 1.2rem;
 }
-  input::placeholder {
+input::placeholder {
   color: rgb(175, 175, 175);
-  }
-#digite__email{
+}
+#digite__email {
   width: 45%;
   height: 40px;
   padding: 15px;
 }
-#enviar__email{
+#enviar__email {
   width: 15%;
   padding: 10px;
   cursor: pointer;
-}  
-  #enviar__email:hover{
-      background-color: #312b52;
-      scale: 1.05;
+}
+#enviar__email:hover {
+  background-color: #312b52;
+  scale: 1.05;
+}
+@media (max-width: 600px) {
+  :root {
+    font-size: 13px;
   }
-@media (max-width: 600px){
-  :root{
-      font-size: 13px;
+  .main {
+    display: flex;
+    flex-direction: column;
   }
-  .main{
-      display: flex;
-      flex-direction: column; 
-  }
-  .relogio{
-      margin: 20px 10px;
+  .relogio {
+    margin: 20px 10px;
   }
   footer {
-      display: flex;
-      flex-direction: column;
-      margin: 20px auto;
-      flex-wrap: wrap;
-      text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto;
+    flex-wrap: wrap;
+    text-align: center;
   }
   footer h2 {
-      margin-left: 0px;
-      padding: 10px;
+    margin-left: 0px;
+    padding: 10px;
   }
-  form input{
-      margin-top: 10px;
-      margin-bottom: 8px;
-  }    
-  #formSection{
-     padding: 30px 0px;
-  }  
-  #digite__email{
-      width: 80%;
-      height: 20%;
-      padding: 15px;
+  form input {
+    margin-top: 10px;
+    margin-bottom: 8px;
   }
-  #enviar__email{
-      width: 40%;
-      height: 30%;
-      padding: 10px;
-  }      
+  #formSection {
+    padding: 30px 0px;
+  }
+  #digite__email {
+    width: 80%;
+    height: 20%;
+    padding: 15px;
+  }
+  #enviar__email {
+    width: 40%;
+    height: 30%;
+    padding: 10px;
+  }
 }
