@@ -24,15 +24,15 @@ showSelectedCards = () => {
 
 
 //Desafio alternar entre eventos de teclado
-/* 
+ 
 function checkKeyboardCode(){
     document.addEventListener('keydown', (event) => { //o evento keydown é quando pressiono uma tecla
         var name = event.key;
         var code = event.code;
-        alert(`Key pressed ${name} \r\n key code value ${code}`);
+        alert(`Tecla precionada ${name} \r\n key code value ${code}`);
     }, false);
 }
-*/
+
 //checkKeyboardCode();
 function addKeyboardEventListeners() {
     document.addEventListener('keydown', (event) => {
