@@ -4,7 +4,7 @@ function addBorder(element) {
     var card = document.querySelector(element);
     card.classList.toggle("cardChanges");
 }
-function selectCard(id) {
+function selectCard(id)  {
     var element = document.getElementById(id);
     element.classList.toggle("card-selected");
     if (ingressos.includes(id)) {
